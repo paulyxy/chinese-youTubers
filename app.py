@@ -6,13 +6,8 @@ Created on Sat Feb  4 16:09:42 2023
 https://developers.google.com/youtube/v3/getting-started
 
 """
-import numpy as np
 import streamlit as st
 import webbrowser
-
-
-#import numpy_financial as nf
-from matplotlib import pyplot as plt
 
 st.set_page_config(layout="wide")
 st.title("Oversea Chinese YouTubers (中文海外油管大拿）") 
