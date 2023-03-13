@@ -2,17 +2,19 @@ import streamlit as st
 
 st.set_page_config(layout="wide")
 st.title("Overseas Chinese YouTubers (中文海外油管大拿）") 
-st.write("By Dr. Yan, v1.0, 3/12/2023")
+st.write("By Dr. Yan, v1.0, 3/13/2023")
 
 a=f" ##### After choosing a name, click the related link. Click 'refresh' to clear everything."
 
 data={
       "None": "haha",
       "XiaoMing 蕭茗看世界": "https://www.youtube.com/@user-tc3ev4bs8i",
+      "Kim's Observation 王剑每日观察":"https://www.youtube.com/@wongkim728",
       "Fang Zhuan 方的言":"https://www.youtube.com/@fangzhuan",
       "JiangFeng 江峰时刻":"https://www.youtube.com/@JiangFengTimes",
       "WenZhao文昭谈古论今": "https://www.youtube.com/results?search_query=wenzhao",
       "Mr. Shen 公子沈":"https://www.youtube.com/@gongzishen",
+      "Da Yu Show 新聞拍案驚奇 大宇":"https://www.youtube.com/@DayuShow",
       "Sydney DaDDy 雪梨女乃爸":"https://www.youtube.com/@SydneyDaddy1",
       "weiyuksj 薇羽看世間":"https://www.youtube.com/@weiyuksj",
       "LiMuYang 新聞看點 李沐陽":"https://www.youtube.com/@MuYangShow",
@@ -33,6 +35,7 @@ data2={
       "BBC News 中文":"https://www.youtube.com/@bbcnewschinese",
       "Rocky 洛奇":"https://www.youtube.com/@Rocky1108",
       "Fang Wei Time 方偉時間":"https://www.youtube.com/@FangWeiTime",
+      "SXH 蘇小和《批評書》":"https://www.youtube.com/@sxh",
       "jayhsu1965 徐杰慢半拍":"https://www.youtube.com/@jayhsu1965",
       "Wang Dan 王丹學堂":"https://www.youtube.com/@wangdanschool",
       "ShangGuanLun 上官亂":"https://www.youtube.com/@shangguanluan",
@@ -43,9 +46,9 @@ data2={
 data3={
       "None": "haha",
       "Mark Space 馬克時空":"https://www.youtube.com/@markspacetime",
-      "火力就是正義（百科頻道）":"https://www.youtube.com/watch?v=9J97ISB8mrA",
+      "Mr. F2 火力就是正義（百科頻道）":"https://www.youtube.com/watch?v=9J97ISB8mrA",
       "tansuoshifen 探索時分 · 周子定":"https://www.youtube.com/@tansuoshifen",
-      "名将榜":"https://www.youtube.com/@agl",
+      "AGL 名将榜":"https://www.youtube.com/@agl",
       "Arms Say 兵器說":"https://www.youtube.com/@armssay",
       "military-focus 時事軍事-夏洛山":"https://www.youtube.com/@military-focus",
       "New Cold War Room 新冷战情报室":"https://www.youtube.com/@newcoldwarroom"
@@ -54,7 +57,10 @@ data3={
 data4={
       "None": "haha",
       "YueGe Movie 越哥说电影":"https://www.youtube.com/@yuegemovie",
-      "A Yi Dian Ying 阿奕电影":"https://www.youtube.com/@ayidianying"
+      "A Yi Dian Ying 阿奕电影":"https://www.youtube.com/@ayidianying",
+      "user-no4vb1wl6r 牛叔说电影":"https://www.youtube.com/@user-no4vb1wl6r",
+      "myylovee1 电影最TOP":"https://www.youtube.com/@myylovee1",
+      "user-dm3rg8ls7x 科幻桃小柏【官方频道】":"https://www.youtube.com/@user-dm3rg8ls7x"
 
       }
 
