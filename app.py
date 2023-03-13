@@ -63,8 +63,6 @@ with st.expander("Step 1: click here to see (or hide) a simple explanation."):
     
 col1, col2,col3=st.columns([1.2,1.2,1.2])
 
-#names=data.keys()
-#names=("None","XiaoMing 萧茗","WenZhao 文昭谈古论今")
 names=data.keys()
 names2=data2.keys()
 names3=data3.keys()
@@ -72,7 +70,7 @@ names4=data4.keys()
 
 k="====>"
     
-who=col1.selectbox("List 1 (时事 1): After choosing a name, click related link", names)
+who=col1.selectbox("List 1 (时事 1): After choosing a name, click the related link", names)
 if who=="None":
     #col1.write(f' {k} No name chosen yet')
     col1.write('                       ')
@@ -83,7 +81,7 @@ else:
     col1.write('haha')
     
    
-who2=col1.selectbox("List 2 (时事 2): After choosing a name, click related link", names2)
+who2=col1.selectbox("List 2 (时事 2): 选择一个名字，然后点击其相应的网页", names2)
 if who2=="None":
     #col1.write(f' {k} No name chosen yet from list #2.')
     col1.write('                       ')
@@ -94,7 +92,7 @@ else:
     col1.write('haha')    
 
 
-who3=col2.selectbox("List 3 （军事）: After choosing a name, click related link", names3)
+who3=col2.selectbox("List 3 （军事）: After choosing a name, click the related link", names3)
 if who3=="None":
     #col2.write(f' {k} No name chosen yet')
     col2.write('                       ')
@@ -104,7 +102,7 @@ elif who3!="None":
 else:
     col2.write('haha')
 
-who4=col3.selectbox("List 4 （影视）: After choosing a name, click related link", names4)
+who4=col3.selectbox("List 4 （影视）: 选择一个名字，然后点击其相应的网页", names4)
 if who4=="None":
     #col3.write(f' {k} No name chosen yet')
     col3.write('                       ')
