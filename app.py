@@ -72,7 +72,7 @@ names4=data4.keys()
 
 k="====>"
     
-who=col1.selectbox("List 1 (时事 1): Choose a name, then go to his/her channel", names)
+who=col1.selectbox("List 1 (时事 1): After choosing a name, click related link", names)
 if who=="None":
     #col1.write(f' {k} No name chosen yet')
     col1.write('                       ')
@@ -83,7 +83,7 @@ else:
     col1.write('haha')
     
    
-who2=col1.selectbox("List 2 (时事 2): Choose a name, then go to his/her channel", names2)
+who2=col1.selectbox("List 2 (时事 2): After choosing a name, click related link", names2)
 if who2=="None":
     #col1.write(f' {k} No name chosen yet from list #2.')
     col1.write('                       ')
@@ -94,7 +94,7 @@ else:
     col1.write('haha')    
 
 
-who3=col2.selectbox("List 3 （军事）: Choose a name, then go to his/her channel", names3)
+who3=col2.selectbox("List 3 （军事）: After choosing a name, click related link", names3)
 if who3=="None":
     #col2.write(f' {k} No name chosen yet')
     col2.write('                       ')
@@ -104,7 +104,7 @@ elif who3!="None":
 else:
     col2.write('haha')
 
-who4=col3.selectbox("List 4 （影视）: Choose a name, then go to his/her channel", names4)
+who4=col3.selectbox("List 4 （影视）: After choosing a name, click related link", names4)
 if who4=="None":
     #col3.write(f' {k} No name chosen yet')
     col3.write('                       ')
