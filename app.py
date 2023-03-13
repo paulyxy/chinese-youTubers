@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Feb  4 16:09:42 2023
-@author: pyan
-
-https://developers.google.com/youtube/v3/getting-started
-
-"""
 import streamlit as st
 import webbrowser
 
