@@ -4,7 +4,7 @@ st.set_page_config(layout="wide")
 st.title("Overseas Chinese YouTubers (中文海外油管大拿）") 
 st.write("By Dr. Yan, v1.0, 3/12/2023")
 
-a=f" #####  Choose a name, then go to his/her website. Click 'refresh' to clear everything."
+a=f" ##### After choosing a name, click the related link. Click 'refresh' to clear everything."
 
 data={
       "None": "haha",
