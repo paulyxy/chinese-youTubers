@@ -1,11 +1,10 @@
 import streamlit as st
-import webbrowser
 
 st.set_page_config(layout="wide")
 st.title("Overseas Chinese YouTubers (中文海外油管大拿）") 
 st.write("By Dr. Yan, v1.0, 3/12/2023")
 
-a=f" #####  Choose a name, then go to his/her website."
+a=f" #####  Choose a name, then go to his/her website. Click 'refresh' to clear everything."
 
 data={
       "None": "haha",
@@ -62,7 +61,7 @@ data4={
 with st.expander("Step 1: click here to see (or hide) a simple explanation."):
     st.write(a)
     
-col1, col2,col3,col4 =st.columns([1,1,1,1])
+col1, col2,col3=st.columns([1.2,1.2,1.2])
 
 #names=data.keys()
 #names=("None","XiaoMing 萧茗","WenZhao 文昭谈古论今")
@@ -79,8 +78,7 @@ if who=="None":
     col1.write('                       ')
 elif who!="None":
     this=data[who]
-    who="None"
-    webbrowser.open(this,new=0) 
+    col1.write(this) 
 else:
     col1.write('haha')
     
@@ -91,7 +89,7 @@ if who2=="None":
     col1.write('                       ')
 elif who2!="None":
     this=data2[who2]
-    webbrowser.open(this) 
+    col1.write(this) 
 else:
     col1.write('haha')    
 
@@ -102,7 +100,7 @@ if who3=="None":
     col2.write('                       ')
 elif who3!="None":
     this=data3[who3]
-    webbrowser.open(this) 
+    col2.write(this) 
 else:
     col2.write('haha')
 
@@ -112,7 +110,7 @@ if who4=="None":
     col3.write('                       ')
 elif who4!="None":
     this=data4[who4]
-    webbrowser.open(this) 
+    col3.write(this) 
 else:
     col3.write('haha')
 
