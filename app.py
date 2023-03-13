@@ -1,5 +1,7 @@
 import streamlit as st
-import webbrowser
+#import click
+import os
+#os.system("start \"\" https://datayyy.com")
 
 st.set_page_config(layout="wide")
 st.title("Oversea Chinese YouTubers (中文海外油管大拿）") 
@@ -78,36 +80,39 @@ if who=="None":
     col1.write(f' {k} No name chosen yet')
 elif who!="None":
     this=data[who]
-    webbrowser.open(this) 
+    #a=click.launch((this) 
+    os.system(f"start \"\" {this}")
 else:
-    col1.write('haha')
-    
+    print("haha")
+ #  
    
 who2=col1.selectbox("List 2 (时事 2): Choose a name, then go to his/her channel", names2)
 if who2=="None":
     col1.write(f' {k} No name chosen yet from list #2.')
 elif who2!="None":
     this=data2[who2]
-    webbrowser.open(this) 
+    #click.launch((this) 
+    os.system(f"start \"\" {this}")
 else:
-    col1.write('haha')    
-
+    col1.write('haha')
 
 who3=col2.selectbox("List 3 （军事）: Choose a name, then go to his/her channel", names3)
 if who3=="None":
     col2.write(f' {k} No name chosen yet')
 elif who3!="None":
     this=data3[who3]
-    webbrowser.open(this) 
+    #click.launch((this) 
+    os.system(f"start \"\" {this}")
 else:
     col2.write('haha')
-
+                 
 who4=col3.selectbox("List 4 （影视）: Choose a name, then go to his/her channel", names4)
 if who4=="None":
     col3.write(f' {k} No name chosen yet')
 elif who4!="None":
     this=data4[who4]
-    webbrowser.open(this) 
+    #click.launch((this) 
+    os.system(f"start \"\" {this}")
 else:
-    col3.write('haha')
+    col3.write('haha3')
 
